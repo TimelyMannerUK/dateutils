@@ -4,6 +4,7 @@
     "declaration": true,
     "outDir": "dist",
     "target": "es5",
+    "lib": ["esnext"],
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true

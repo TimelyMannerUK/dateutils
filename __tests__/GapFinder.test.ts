@@ -52,4 +52,6 @@ describe('GapFinder', () => {
     const result = gapFinder.getFreeSlots({ size: 30, duration: 'minutes' });
     expect(result).toHaveLength(0);
   });
+
+  test('should handle range of dates', () => {});
 });

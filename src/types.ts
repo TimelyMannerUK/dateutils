@@ -1,16 +1,16 @@
-import { DateTime } from 'luxon';
+export type DurationKey =
+  | 'years'
+  | 'months'
+  | 'weeks'
+  | 'days'
+  | 'hours'
+  | 'minutes'
+  | 'seconds'
+  | 'milliseconds';
 
 export type DateObject = {
   size: number;
-  duration:
-    | 'years'
-    | 'months'
-    | 'weeks'
-    | 'days'
-    | 'hours'
-    | 'minutes'
-    | 'seconds'
-    | 'milliseconds';
+  duration: DurationKey;
 };
 
 export type TimeSlot = {
