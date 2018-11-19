@@ -1,6 +1,6 @@
 {
   "name": "@timelymanner/dateutils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A collection of date utils for working with dates at Timely Manner",
   "author": "Timely Manner",
   "license": "MIT",
