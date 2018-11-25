@@ -34,8 +34,8 @@ class GapFinder {
     const slots: TimeSlot[] = grid.map((range: Interval) => {
       const overlaps = merged.some(m => range.overlaps(m));
       return {
-        start: range.start.toISO(),
-        end: range.end.toISO(),
+        start: range.start.toISO({ includeOffset: false }),
+        end: range.end.toISO({ includeOffset: false }),
         free: !overlaps
       };
     });
