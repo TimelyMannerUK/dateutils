@@ -31,9 +31,12 @@ export function getDateWithStartAndEndTime(date: string, timeRange: TimeRange) {
   const endDuration = Duration.fromObject({
     [timeRange.format]: timeRange.endTime
   });
-  const intialDate = normaliseDate(date);
-  const start = intialDate.plus(startDuration).toISO({ includeOffset: false });
-  const end = intialDate.plus(endDuration).toISO({ includeOffset: false });
+  const start = normaliseDate(date)
+    .plus(startDuration)
+    .toISO({ includeOffset: false });
+  const end = normaliseDate(date)
+    .plus(endDuration)
+    .toISO({ includeOffset: false });
   return { start, end };
 }
 
